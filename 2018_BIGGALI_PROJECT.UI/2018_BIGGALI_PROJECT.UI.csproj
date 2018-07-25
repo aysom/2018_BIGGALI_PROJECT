@@ -1,0 +1,314 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D824786-D69F-4A8D-AE09-338ED147D389}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2018_BIGGALI_PROJECT.UI</RootNamespace>
+    <AssemblyName>2018_BIGGALI_PROJECT.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.6\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Upload\Category\LargePath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Category\LargePath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Category\LargePath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Category\LargePath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Category\LargePath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Category\LargePath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Category\LargePath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Category\LargePath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Category\LargePath\ec29b1ce7ba64575b6faa2d7929f9853_brosur.jpg" />
+    <Content Include="Upload\Category\OrjPath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Category\OrjPath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Category\OrjPath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Category\OrjPath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Category\OrjPath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Category\OrjPath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Category\OrjPath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Category\OrjPath\default.png" />
+    <Content Include="Upload\Category\OrjPath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Category\OrjPath\ec29b1ce7ba64575b6faa2d7929f9853_brosur.jpg" />
+    <Content Include="Upload\Category\OrjPath\noresim.png" />
+    <Content Include="Upload\Category\SmallPath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Category\SmallPath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Category\SmallPath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Category\SmallPath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Category\SmallPath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Category\SmallPath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Category\SmallPath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Category\SmallPath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Category\SmallPath\ec29b1ce7ba64575b6faa2d7929f9853_brosur.jpg" />
+    <Content Include="Upload\Logo\OrjPath\default.png" />
+    <Content Include="Upload\Picture\LargePath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Picture\LargePath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Picture\LargePath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Picture\LargePath\6ec0da6e76fe4250a3a5f5ef5e7cd762_kartvizit.jpg" />
+    <Content Include="Upload\Picture\LargePath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Picture\LargePath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Picture\LargePath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Picture\LargePath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Picture\LargePath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Picture\LargePath\f8fa0c6504fa4b05b0ef438b64829a60_2.jpg" />
+    <Content Include="Upload\Picture\OrjPath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Picture\OrjPath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Picture\OrjPath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Picture\OrjPath\6ec0da6e76fe4250a3a5f5ef5e7cd762_kartvizit.jpg" />
+    <Content Include="Upload\Picture\OrjPath\784fff1d76b64a958e28b370d35b976e_fikir.jpg" />
+    <Content Include="Upload\Picture\OrjPath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Picture\OrjPath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Picture\OrjPath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Picture\OrjPath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Picture\OrjPath\default.png" />
+    <Content Include="Upload\Picture\OrjPath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Picture\OrjPath\f8fa0c6504fa4b05b0ef438b64829a60_2.jpg" />
+    <Content Include="Upload\Picture\OrjPath\noresim.png" />
+    <Content Include="Upload\Picture\SmallPath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Picture\SmallPath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Picture\SmallPath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Picture\SmallPath\6ec0da6e76fe4250a3a5f5ef5e7cd762_kartvizit.jpg" />
+    <Content Include="Upload\Picture\SmallPath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Picture\SmallPath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Picture\SmallPath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Picture\SmallPath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Picture\SmallPath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Picture\SmallPath\f8fa0c6504fa4b05b0ef438b64829a60_2.jpg" />
+    <Content Include="Upload\Slider\LargePath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Slider\LargePath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Slider\LargePath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Slider\LargePath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Slider\LargePath\94b85b4c811b49ba87fabf9660421a27_brosur.jpg" />
+    <Content Include="Upload\Slider\LargePath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Slider\LargePath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Slider\LargePath\b31b0b5c961b491aa22d78ae44a5e318_brosur.jpg" />
+    <Content Include="Upload\Slider\LargePath\b8b7ec4b3a6142f98c03a290885849b4_brosur.jpg" />
+    <Content Include="Upload\Slider\LargePath\ba4a54b2cd814540b41a8d393e433e5c_2.jpg" />
+    <Content Include="Upload\Slider\LargePath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Slider\LargePath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Slider\OrjPath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Slider\OrjPath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Slider\OrjPath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Slider\OrjPath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Slider\OrjPath\94b85b4c811b49ba87fabf9660421a27_brosur.jpg" />
+    <Content Include="Upload\Slider\OrjPath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Slider\OrjPath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Slider\OrjPath\b31b0b5c961b491aa22d78ae44a5e318_brosur.jpg" />
+    <Content Include="Upload\Slider\OrjPath\b8b7ec4b3a6142f98c03a290885849b4_brosur.jpg" />
+    <Content Include="Upload\Slider\OrjPath\ba4a54b2cd814540b41a8d393e433e5c_2.jpg" />
+    <Content Include="Upload\Slider\OrjPath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Slider\OrjPath\default.png" />
+    <Content Include="Upload\Slider\OrjPath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Upload\Slider\OrjPath\noresim.png" />
+    <Content Include="Upload\Slider\SmallPath\43d598b7f45249b481446fdfd72185d8_ekran1.PNG" />
+    <Content Include="Upload\Slider\SmallPath\4a048b6c3e6346ec888074251e3030a3_2.jpg" />
+    <Content Include="Upload\Slider\SmallPath\4adae8a8831944ab9bf7f5bfc27df89e_ekran1.PNG" />
+    <Content Include="Upload\Slider\SmallPath\91a3cfdd55f446948f8ee295cca0bef1_ekran1.PNG" />
+    <Content Include="Upload\Slider\SmallPath\94b85b4c811b49ba87fabf9660421a27_brosur.jpg" />
+    <Content Include="Upload\Slider\SmallPath\97eba205eb0c4a78a3080155fc367b5f_2.jpg" />
+    <Content Include="Upload\Slider\SmallPath\a1c51af8eabb4ded8eb1c5b9ff866b34_2.jpg" />
+    <Content Include="Upload\Slider\SmallPath\b31b0b5c961b491aa22d78ae44a5e318_brosur.jpg" />
+    <Content Include="Upload\Slider\SmallPath\b8b7ec4b3a6142f98c03a290885849b4_brosur.jpg" />
+    <Content Include="Upload\Slider\SmallPath\ba4a54b2cd814540b41a8d393e433e5c_2.jpg" />
+    <Content Include="Upload\Slider\SmallPath\d564a0b4c47841b99a1351b8352eaff7_ekran1.PNG" />
+    <Content Include="Upload\Slider\SmallPath\ebcebf8b449d4119b794463f682d9b66_ekran1.PNG" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\AdminPanel\AdminPanelAreaRegistration.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\AdminCategoryController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\AdminLoginController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\AdminPictureController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\AdminSiteInfoController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\AdminSliderController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\BaseController.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\BaseVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\CategoryVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\PageDTO\PictureListVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\PageDTO\SliderListVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\PictureVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\SiteInfoVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\SliderVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\AdminDTO\UserVM.cs" />
+    <Compile Include="Areas\AdminPanel\Models\Attributes\UserLoginControl.cs" />
+    <Compile Include="Areas\AdminPanel\Models\Types\Enums\EnumIslemDurum.cs" />
+    <Compile Include="Areas\AdminPanel\Models\Types\Messages\FormMessages.cs" />
+    <Compile Include="Areas\AdminPanel\Models\Types\Messages\UserMessages.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Areas\AdminPanel\Views\web.config" />
+    <Content Include="Areas\AdminPanel\Views\AdminCategory\CategoryDetail.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminCategory\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminCategory\InsertCategory.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminCategory\Partial\CategoryForm.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminHome\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminLogin\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminPicture\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminPicture\InsertPicture.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminPicture\Partial\PictureForm.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminPicture\PictureDetail.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminSiteInfo\EditSiteInfo.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminSiteInfo\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminSlider\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminSlider\InsertSlider.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminSlider\Partial\SliderForm.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\AdminSlider\SliderDetail.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\Shared\AdminLayout.cshtml" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\AdminPanel\Models\Services\" />
+    <Folder Include="Areas\AdminPanel\Views\Base\" />
+    <Folder Include="Areas\AdminPanel\Views\Home\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Upload\Logo\LargePath\" />
+    <Folder Include="Upload\Logo\SmallPath\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\2018_SG_MVC_BTPROJECT.Business\2018_SG_MVC_BTPROJECT.Business.csproj">
+      <Project>{68ff840f-e1f4-43ae-915f-0ec731dde39d}</Project>
+      <Name>2018_SG_MVC_BTPROJECT.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\2018_SG_MVC_BTPROJECT.Entities\2018_SG_MVC_BTPROJECT.Entities.csproj">
+      <Project>{da064364-a3e4-43c6-8ce3-df6b6ecc2a81}</Project>
+      <Name>2018_SG_MVC_BTPROJECT.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56221</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56221/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
